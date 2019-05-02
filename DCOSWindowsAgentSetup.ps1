@@ -112,7 +112,7 @@ function Invoke-CurlRequest {
 
 function Install-7Zip {
     Write-Log "Download 7-Zip"
-    $7ZipFileName = "7z1801-x64.msi"
+    $7ZipFileName = "7z1900-x64.msi"
     $7ZipMsiUrl = "$BootstrapUrl/$7ZipFileName"
     $7ZipMsiFile = Join-Path $env:TEMP $7ZipFileName
     if(Test-Path $7ZipMsiFile) {
